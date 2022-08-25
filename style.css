@@ -50,13 +50,17 @@ body{
   display: flex;
   /* justify-content: flex-end; */
   flex-direction: column;
-  width: 200px;
-  height: 500px;
+  width: 400px;
+  height: 700px;
   margin-right: 20px;
 
 }
 
-.search-bar{}
+.search-bar{
+  color: var(--searchAndAbility);
+  background-color: none;
+  border-color: var(--searchAndAbility);
+}
 
 #search{
     background-color: var(--bg);
@@ -101,8 +105,9 @@ background-color: var(--orangeDark);
     flex-direction: column;
     margin: 10px;
     border-radius: 5px;
-    width: 400px;
-    height: 500px;
+    width: 600px;
+    height: 700px;
+    margin-left: 100px;
 
 }
 
