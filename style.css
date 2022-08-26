@@ -49,7 +49,6 @@ body{
      flex-direction: row;
     font-family: 'ZCOOL KuaiLe', cursive;
     align-items: center;
-
   }
 
   main{
@@ -57,30 +56,24 @@ body{
     flex-direction: row;
     align-items: center;
     position: relative;
-
-
-
   }
 
 .left-side{
   display: flex;
-  /* justify-content: flex-end; */
   flex-direction: column;
   width: 400px;
   height: 700px;
   margin-right: 40px;
-  /* align-items: center; */
-
-
 }
 
 #search-bar{
-  color: var(--searchAndAbility);
+  color: var(--headerBG);
   border-radius: 5px;
   border-color: #fca494;
   margin-bottom: 5px;
   background-color: var(--bg);
   font-size: 20px;
+  font-weight: bold;
 }
 
 #search{
@@ -94,7 +87,6 @@ body{
     margin-left: 25%;
     border-radius: 5px;
     font-size: 25px;
-
 }
 
 #search:hover{
@@ -112,10 +104,8 @@ background-color: var(--orangeDark);
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
     margin-top: 15px;
-
-
-
 }
+
 .my-team h1{
   background-color: var(--orangeDark);
   color: var(--myTeamText);
@@ -134,7 +124,6 @@ background-color: var(--orangeDark);
     border-style: solid;
     font-size: 30px;
     padding-left: 5px;
-
 }
 
 #p1{
@@ -146,6 +135,7 @@ background-color: var(--orangeDark);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
+
 .remove{
   display: flex;
   justify-content: flex-end;
@@ -166,7 +156,6 @@ background-color: var(--orangeDark);
     width: 600px;
     height: 700px;
     justify-content: space-between;
-
 }
 
 #pokemon-name{
@@ -175,7 +164,6 @@ justify-content: center;
 align-items: center;
 padding-left: 50px;
 font-size:
-
 }
 
 #addBTN{
@@ -188,7 +176,6 @@ font-size:
   border-color: var(--pokeText);
   padding: 5px;
   margin-left: 50px;
-
 }
 
 #addBTN:hover{
@@ -212,5 +199,4 @@ image{
   margin: 5px;
   font-size: 25px;
   line-height: 60px;
-
 }
