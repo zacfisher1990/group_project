@@ -23,6 +23,7 @@ header h1 {
     align-items: center;
     font-size:60px;
     padding-left: 35%;
+    text-shadow: 0 0 3px #ffd4be, 0 0 5px #ffd4be;
 
 
 }
@@ -96,6 +97,11 @@ body{
 
 }
 
+#search:hover{
+  color: #941E00;
+  cursor: pointer;
+}
+
 .my-team{
 background-color: var(--orangeDark);
     color: var(--myTeamText);
@@ -138,8 +144,11 @@ background-color: var(--orangeDark);
 .remove{
   display: flex;
   justify-content: flex-end;
-  
+}
 
+.remove:hover{
+  color: #941E00;
+  cursor: pointer;
 }
 
 .right-side{
@@ -167,20 +176,35 @@ padding-left: 50px;
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
+  border-radius: 5px;
+  border-width: 3px;
+  border-style: solid;
+  border-color: var(--pokeText);
+  padding: 5px;
+  margin-left: 50px;
 
-  padding-left: 50px;
 }
+
+#addBTN:hover{
+  color: #941E00;
+  cursor: pointer;
+  border-color: #941E00;
+}
+
 
 image{
 
 }
 
-#type{}
+#type{
+
+}
 
 .ability{
   background-color: var(--searchAndAbility);
   color: #F2EAE7;
   margin: 5px;
   font-size: 25px;
+  line-height: 60px;
 
 }
