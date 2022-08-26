@@ -9,6 +9,13 @@
     --headerBG: #fa947a;
     }
 
+    /* fonts
+    header- font-family: 'Silkscreen', cursive;
+font-family: 'Space Mono', monospace;
+
+else - font-family: 'Silkscreen', cursive;
+font-family: 'Space Mono', monospace;*/
+
 
 header h1 {
     color: var(--orangeDark);
@@ -34,6 +41,7 @@ body{
     background-color: var(--bg);
     flex-direction: row;
     flex-wrap: wrap;
+      justify-content: center;
 
   }
 
@@ -44,27 +52,33 @@ body{
     position: relative;
 
 
+
   }
 
 .left-side{
   display: flex;
   /* justify-content: flex-end; */
   flex-direction: column;
-  width: 600px;
+  width: 400px;
   height: 700px;
-  margin-right: 20px;
+  margin-right: 40px;
+
 
 }
 
-.search-bar{
+#search-bar{
   color: var(--searchAndAbility);
+  border-radius: 5px;
+  border-color: #fca494;
+  margin-bottom: 5px;
   background-color: var(--bg);
-  border: 1px solid var(searchAndAbility)
+  font-size: 20px;
 }
 
 #search{
     background-color: var(--bg);
     border-color: var(--searchBTN);
+    font-size: 20px;
 }
 
 .my-team{
@@ -74,15 +88,15 @@ background-color: var(--orangeDark);
     border-style: solid;
     border-width: 3px;
     border-radius: 5px;
-    border-top:
+
 
 }
 .my-team h1{
   background-color: var(--orangeDark);
   color: var(--myTeamText);
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   background-size: cover;
   font-size: 40px;
@@ -90,17 +104,18 @@ background-color: var(--orangeDark);
 }
 .pokemon{
     background-color: var(--orangeDark);
-    /* margin: 5px; */
     border-width: 5px;
     border-color: var(--bg);
     border-style: solid;
     font-size: 30px;
+
 
 }
 
 .remove{
   display: flex;
   justify-content: flex-end;
+
 }
 
 .right-side{
@@ -112,40 +127,36 @@ background-color: var(--orangeDark);
     border-radius: 5px;
     width: 600px;
     height: 700px;
-    margin-left: 100px;
     justify-content: space-between;
 
+}
+
+#pokemon-name{
+display: flex;
+justify-content: center;
+align-items: center;
+padding-left: 50px;
 
 }
 
-.pokemon-name{
+#addBTN{
   display: flex;
-  justify-content: flex-start;
+  align-items: flex-end;
+  justify-content: space-between;
 
-}
-
-.addBTN{
-  border-radius: 5px;
-  display: flex;
-  justify-content: flex-end;
+  padding-left: 50px;
 }
 
 image{
 
 }
 
-.ability{
-  flex-direction: column;
-  display: flex;
-  justify-content: flex-end;
-  font-size: 30px;
-}
-
 #type{}
 
 .ability{
   background-color: var(--searchAndAbility);
-  color: var(--abilityText);
+  color: #F2EAE7;
   margin: 5px;
+  font-size: 25px;
 
 }
