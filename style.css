@@ -108,7 +108,11 @@ background-color: var(--orangeDark);
     border-color: var(--orangeDark);
     border-style: solid;
     border-width: 3px;
-    border-radius: 5px;
+    border-radius: 10px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    margin-top: 15px;
+
 
 
 }
@@ -129,6 +133,7 @@ background-color: var(--orangeDark);
     border-color: var(--bg);
     border-style: solid;
     font-size: 30px;
+    padding-left: 5px;
 
 }
 
@@ -169,6 +174,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 padding-left: 50px;
+font-size:
 
 }
 
