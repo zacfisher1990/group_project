@@ -6,24 +6,60 @@
     --myTeamText: #ffcabb;
     --pokeText: #fec2b2;
     --abilityText: #ffa595;
+    --headerBG: #fa947a;
     }
-h1 {
+
+
+.header h1 {
     color: var(--orangeDark);
+    background-color: var(--headerBG);
+    height: inherit;
+    width: 100%;
+
+
+}
+
+.header{
+  display: block
+  background-color: var(--headerBG);
+  width: 100%;
+  height: 20%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+   flex-direction: row;
+
 }
 body{
     display: flex;
     background-color: var(--bg);
+    flex-direction: row;
+    flex-wrap: wrap;
+
   }
-  
-.left-side{}
-  
+
+  main{
+    display:block;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+
+
+  }
+
+.left-side{
+  display: flex;
+  /* justify-content: flex-end; */
+  flex-direction: column;
+
+}
+
 .search-bar{}
-  
+
 #search{
     background-color: var(--bg);
     border-color: var(--searchBTN);
 }
-  
+
 .my-team{
     margin-top: 10px;
     color: var(--myTeamText);
@@ -32,25 +68,35 @@ body{
     border-width: 3px;
     border-radius: 5px;
 }
-  
+.my-team h1{
+  background-color: var(--orangeDark);
+  color: var(--myTeamText)
+}
 .pokemon{
     background-color: var(--orangeDark);
 }
-  
+
 .right-side{
     background-color: var(--orangeDark);
     color: var(--pokeText);
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    border-radius: 5px;
+    width: 60%;
 }
-  
+
 .pokemon-name{
 
 }
-  
-image{}
-  
+
+image{
+
+}
+
 #type
-  
+
 .ability{
         background-color: var(--searchAndAbility);
-        color: var(--abilityText)
+        color: var(--abilityText);
 }
