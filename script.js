@@ -1,12 +1,13 @@
 let APIKEY = "TBp5JZEQGwFT3u2bIcUORi3Fie4ChGyR";
 document.addEventListener("DOMContentLoaded", init);
 function init(){
-    document.getElementById("BTNsearch").addEventListener("click", ev => {
+    document.getElementById("Search").addEventListener("click", ev => {
         ev.preventDefault();
 
 let url = 'api.giphy.com/v1/gifs/search?api_key=${APIKEY}&limit=1&q=';
-let str = document.getElementById("search").ariaValueMax.trim();
+let str = document.getElementById("search-bar").value.trim();
 url = url.concat(str);
+console.log(url);
 fetch(url)
 .then(response => response.json() )
 .then(content => {
@@ -21,8 +22,8 @@ fetch(url)
     fig.appendChild(img);
     fig.appendChild(fc);
     let gif = document.querySelector('.gif');
-    gif.insertAdjacentElement('afterbegin', fig)
-    document.querySelector('#search').value ='';
+    gif.insertAdjacentElement('afterbegin', fig);
+    document.querySelector('#search-bar').value ='';
 })
 .catch(err => {
     console.error(err);
