@@ -1,3 +1,4 @@
+
 var pokeSearch = document.getElementById("search");
 var pokeName = document.getElementById("pokemon-name");
 var pokeType = document.getElementById("type");
@@ -31,10 +32,12 @@ fetch(pokeURL)
     })
 })
 
+
+
+
 let APIKEY = "TBp5JZEQGwFT3u2bIcUORi3Fie4ChGyR";
 document.addEventListener("")
-
-let url = 'api.giphy.com/v1/gifs/search?api_key=$' + APIKEY + '&limit=1&q=';
+let url = 'api.giphy.com/v1/gifs/search?api_key=${APIKEY}&limit=1&q=';
 let str = document.getElementById("search").ariaValueMax.trim();
 url = url.concat(str);
 fetch(url)
@@ -58,5 +61,4 @@ fetch(url)
     console.error(err);
 
 })
-
-
+ 
