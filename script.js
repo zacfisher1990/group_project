@@ -1,5 +1,8 @@
 let APIKEY = "TBp5JZEQGwFT3u2bIcUORi3Fie4ChGyR";
-document.addEventListener("")
+document.addEventListener("DOMContentLoaded", init);
+function init(){
+    document.getElementById("BTNsearch").addEventListener("click", ev => {
+        ev.preventDefault();
 
 let url = 'api.giphy.com/v1/gifs/search?api_key=${APIKEY}&limit=1&q=';
 let str = document.getElementById("search").ariaValueMax.trim();
@@ -25,3 +28,5 @@ fetch(url)
     console.error(err);
 
 })
+});
+}
