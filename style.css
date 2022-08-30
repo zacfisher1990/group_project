@@ -9,32 +9,46 @@
     --headerBG: #fa947a;
     }
 
+    /* fonts
+    font-family: 'Orbitron', sans-serif;
+font-family: 'ZCOOL KuaiLe', cursive;
+    */
+
 
 header h1 {
     color: var(--orangeDark);
     background-color: var(--headerBG);
     height: inherit;
     width: 100%;
+    align-items: center;
+    font-size:60px;
+    padding-left: 35%;
+    text-shadow: 0 0 3px #ffd4be, 0 0 5px #ffd4be;
 
 
 }
 
-header{
-  display: block;
-  background-color: var(--headerBG);
-  width: 100%;
-  height: 20%;
-  flex-wrap: wrap;
-  justify-content: center;
-   flex-direction: row;
 
-}
 body{
     display: flex;
     background-color: var(--bg);
     flex-direction: row;
     flex-wrap: wrap;
+      justify-content: center;
+      font-family: 'Orbitron', sans-serif;
 
+  }
+
+  header{
+    display: block;
+    background-color: var(--headerBG);
+    width: 100%;
+    height: 20%;
+    flex-wrap: wrap;
+    justify-content: center;
+     flex-direction: row;
+    font-family: 'ZCOOL KuaiLe', cursive;
+    align-items: center;
   }
 
   main{
@@ -42,25 +56,42 @@ body{
     flex-direction: row;
     align-items: center;
     position: relative;
-
-
   }
 
 .left-side{
   display: flex;
-  /* justify-content: flex-end; */
   flex-direction: column;
-  width: 200px;
-  height: 500px;
-  margin-right: 20px;
-
+  width: 400px;
+  height: 700px;
+  margin-right: 40px;
 }
 
-.search-bar{}
+#search-bar{
+  color: var(--headerBG);
+  border-radius: 5px;
+  border-color: #fca494;
+  margin-bottom: 5px;
+  background-color: var(--bg);
+  font-size: 20px;
+  font-weight: bold;
+}
 
 #search{
     background-color: var(--bg);
     border-color: var(--searchBTN);
+    font-size: 20px;
+    color: var(--searchBTN);
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin-left: 25%;
+    border-radius: 5px;
+    font-size: 25px;
+}
+
+#search:hover{
+  color: #941E00;
+  cursor: pointer;
 }
 
 .my-team{
@@ -69,16 +100,18 @@ background-color: var(--orangeDark);
     border-color: var(--orangeDark);
     border-style: solid;
     border-width: 3px;
-    border-radius: 5px;
-    border-top:
-
+    border-radius: 10px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    margin-top: 15px;
 }
+
 .my-team h1{
   background-color: var(--orangeDark);
   color: var(--myTeamText);
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   background-size: cover;
   font-size: 40px;
@@ -86,12 +119,31 @@ background-color: var(--orangeDark);
 }
 .pokemon{
     background-color: var(--orangeDark);
-    /* margin: 5px; */
     border-width: 5px;
     border-color: var(--bg);
     border-style: solid;
     font-size: 30px;
-    background-radius: 5px;
+    padding-left: 5px;
+}
+
+#p1{
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+#p6{
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.remove{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.remove:hover{
+  color: #941E00;
+  cursor: pointer;
 }
 
 .right-side{
@@ -101,26 +153,50 @@ background-color: var(--orangeDark);
     flex-direction: column;
     margin: 10px;
     border-radius: 5px;
-    width: 400px;
-    height: 500px;
-
+    width: 600px;
+    height: 700px;
+    justify-content: space-between;
 }
 
-.pokemon-name{
-
+#pokemon-name{
+display: flex;
+justify-content: center;
+align-items: center;
+padding-left: 50px;
+font-size:
 }
 
-.addBTN{}
+#addBTN{
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  border-radius: 5px;
+  border-width: 3px;
+  border-style: solid;
+  border-color: var(--pokeText);
+  padding: 5px;
+  margin-left: 50px;
+}
+
+#addBTN:hover{
+  color: #941E00;
+  cursor: pointer;
+  border-color: #941E00;
+}
+
 
 image{
 
 }
 
-#type{}
+#type{
+
+}
 
 .ability{
   background-color: var(--searchAndAbility);
-  color: var(--abilityText);
+  color: #F2EAE7;
   margin: 5px;
-
+  font-size: 25px;
+  line-height: 60px;
 }

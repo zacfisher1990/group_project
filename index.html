@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Poketeam Builder</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -17,23 +20,27 @@
 
             <div class="my-team">
                 <h1>My Team </h1>
-                <div class="pokemon" id="p1">pokemon1</div>
-                <div class="pokemon" id="p2">pokemon2</div>
-                <div class="pokemon" id="p3">pokemon3</div>
-                <div class="pokemon" id="p4">pokemon4</div>
-                <div class="pokemon" id="p5">pokemon5</div>
-                <div class="pokemon" id="p6">pokemon6</div>
+                <div class="pokemon" id="p1">pokemon1  <span class="remove" onclick="">remove</span> </div>
+                <div class="pokemon" id="p2">pokemon2  <span class="remove" onclick="">remove</span></div>
+                <div class="pokemon" id="p3">pokemon3  <span class="remove" onclick="">remove</span></div>
+                <div class="pokemon" id="p4">pokemon4  <span class="remove" onclick="">remove</span></div>
+                <div class="pokemon" id="p5">pokemon5  <span class="remove" onclick="">remove</span></div>
+                <div class="pokemon" id="p6">pokemon6  <span class="remove" onclick="">remove</span></div>
             </div>
         </div>
 
         <div class="right-side">
             <h1 id="pokemon-name">PIKACHU <span id="addBTN" onclick="">add</span>  </h1>
             <img src="" id="gif">
+
+            <div class="type-and-ability">
+
             <h2>Type: <span id="type"></span></h2>
             <div class="ability" id="a1">ability1</div>
             <div class="ability" id="a2">ability2</div>
             <div class="ability" id="a3">ability3</div>
             <div class="ability" id="a4">ability4</div>
+            </div>
         </div>
 
 
