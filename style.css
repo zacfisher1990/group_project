@@ -19,7 +19,7 @@ header h1 {
     color: var(--orangeDark);
     background-color: var(--headerBG);
     height: inherit;
-    width: 100%;
+    width: 50%;
     align-items: center;
     font-size:60px;
     padding-left: 35%;
@@ -157,7 +157,7 @@ background-color: var(--orangeDark);
     margin: 10px;
     border-radius: 5px;
     width: 600px;
-    height: 700px;
+    height: 730px;
     justify-content: space-between;
 }
 
@@ -194,6 +194,11 @@ image{
 }
 
 #gif{
+max-width: 500px;
+min-width: 300px;
+max-height: 300px;
+min-width: 200px;
+padding-left: 10%;
 
 
 }
