@@ -33,7 +33,7 @@ body{
     display: flex;
     background-color: var(--bg);
     flex-direction: row;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
       justify-content: center;
       font-family: 'Orbitron', sans-serif;
 
@@ -43,12 +43,15 @@ body{
     display: block;
     background-color: var(--headerBG);
     width: 100%;
-    height: 20%;
+    height: 10%;
     flex-wrap: wrap;
     justify-content: center;
      flex-direction: row;
+     align-items: flex-start;
     font-family: 'ZCOOL KuaiLe', cursive;
     align-items: center;
+    padding-bottom: 20px;
+    position: absolute;
   }
 
   main{
@@ -176,6 +179,7 @@ font-size:
   border-color: var(--pokeText);
   padding: 5px;
   margin-left: 50px;
+  /.
 }
 
 #addBTN:hover{
@@ -189,7 +193,21 @@ image{
 
 }
 
-#type{
+#gif{
+
+
+}
+
+#pokeBanner1{
+  display: flex;
+  justify-content: flex-start;
+  width:400px;
+
+}
+#pokeBanner2{
+  display: flex;
+  justify-content: flex-end;
+  width:400px;
 
 }
 
