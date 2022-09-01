@@ -19,7 +19,7 @@ header h1 {
     color: var(--orangeDark);
     background-color: var(--headerBG);
     height: inherit;
-    width: 50%;
+    width: 100%;
     align-items: center;
     font-size:60px;
     padding-left: 35%;
