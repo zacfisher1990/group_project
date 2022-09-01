@@ -254,6 +254,7 @@ cursor: pointer;
 .remove:hover{
   color: #941E00;
   cursor: pointer;
+}
 
 .right-side{
     background-color: var(--orangeDark);
