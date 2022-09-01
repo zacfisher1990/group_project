@@ -13,6 +13,8 @@ var pokemonThree = document.getElementById("p3");
 var pokemonFour = document.getElementById("p4");
 var pokemonFive = document.getElementById("p5");
 var pokemonSix = document.getElementById("p6");
+
+
 var gif = document.getElementById("gif");
 
 
@@ -21,8 +23,8 @@ var gif = document.getElementById("gif");
 //search button click function
 pokeSearch.addEventListener('click', function(event){
     event.preventDefault()
-    
-    
+
+
 
 var pokeInput = document.getElementById("search-bar").value
 var pokeURL = "https://pokeapi.co/api/v2/pokemon/" + pokeInput;
@@ -42,14 +44,14 @@ fetch(pokeURL)
     .then(function (data) {
       console.log(data);
       pokeName.textContent = data.forms[0].name;
-     
+
       //add button
       var add = document.createElement("span");
       add.innerHTML = "Add " + data.forms[0].name;
-      
+
       addButton.appendChild(add);
-      
-      
+
+
       //display type
       pokeType.textContent = data.types[0].type.name;
       //display moves/abilities
@@ -59,18 +61,18 @@ fetch(pokeURL)
       pokeMove4.textContent = data.moves[3].move.name;
 
 //Add pokemon to team button click function
-    
-    
-    
+
+
+
       add.addEventListener('click', function(event){
         event.preventDefault()
 
         add.style.display = "none";
         //addButton.style.display = "none";
-        
+
         var pokeNames = [];
         pokeNames[0] = data.forms[0].name;
-        
+
         localStorage.setItem("name", pokeNames);
         //if slot 1 is availble use slot 1...
         if (pokemonOne.innerHTML === "pokemon1") {
@@ -85,7 +87,7 @@ fetch(pokeURL)
                 pokemonOne.innerHTML = "pokemon1";
                 remove1.style.display = "none";
             })
-        
+
         } else if (pokemonTwo.innerHTML === "pokemon2" && pokemonOne.innerHTML !== "pokemon1") {
             pokemonTwo.textContent = localStorage.getItem("name");
             //remove button 2
@@ -153,25 +155,23 @@ fetch(pokeURL)
 
 
         }
-     } ) 
+     } )
     })
-    
+
 
     fetch(giphyURL)
     .then(function (response) {
       return response.json();
-      
+
     })
     .then(function (dataGiphy) {
       console.log(dataGiphy);
-      
+
       if (pokeName.textContent === "Pokemon doesn't exist") {
         gif.src = "https://pm1.narvii.com/6241/c4daa592fe4db39e706f3767e23dd73494f0f624_hq.jpg";
       } else {
         gif.src= dataGiphy.data[0].images.downsized.url;
       }
-       
+
     })
 })
-
- 
