@@ -61,19 +61,6 @@ body{
 
 
 
-header{
-  display: block;
-  background-color: var(--headerBG);
-  width: 100%;
-  height: 20%;
-  flex-wrap: wrap;
-  justify-content: center;
-   flex-direction: row;
-  font-family: 'ZCOOL KuaiLe', cursive;
-  align-items: center;
-
-
-}
 
 main{
   display: flex;
@@ -154,15 +141,7 @@ font-size: 40px;
 }
 
 
-#p1{
-border-top-right-radius: 5px;
-border-top-left-radius: 5px;
-}
 
-#p6{
-border-bottom-left-radius: 5px;
-border-bottom-right-radius: 5px;
-}
 
 #search-bar{
   color: var(--headerBG);
@@ -226,14 +205,6 @@ cursor: pointer;
 }
 
 
-.pokemon{
-    background-color: var(--orangeDark);
-    border-width: 5px;
-    border-color: var(--bg);
-    border-style: solid;
-    font-size: 30px;
-    padding-left: 5px;
-}
 
 #p1{
   border-top-right-radius: 5px;
@@ -245,15 +216,7 @@ cursor: pointer;
   border-bottom-right-radius: 5px;
 }
 
-.remove{
-  display: flex;
-  justify-content: flex-end;
-}
 
-.remove:hover{
-  color: #941E00;
-  cursor: pointer;
-}
 
 .right-side{
     background-color: var(--orangeDark);
