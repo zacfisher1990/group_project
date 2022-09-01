@@ -38,6 +38,7 @@ fetch(pokeURL)
     .then(function (response) {
         if (response.status == "404") {
             pokeName.textContent = "Pokemon doesn't exist";
+            window.location.replace("404/index.html");
            
         } else {
             return response.json();
