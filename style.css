@@ -267,11 +267,7 @@ cursor: pointer;
     height: 730px;
     justify-content: space-between;
 }
-#gif {
-  margin-left: 150px;
-  max-width: 300px;
-  max-height: 300px;
-}
+
 
 #pokemon-name{
 display: flex;
@@ -285,13 +281,15 @@ font-size:
 
 display: flex;
 align-items: flex-end;
-justify-content: space-between;
+justify-content: center;
 border-radius: 5px;
 border-width: 3px;
 border-style: solid;
 border-color: var(--pokeText);
 padding: 5px;
-margin-left: 50px;
+margin-left: 45%;
+width: 100px;
+
 }
 
 #addBTN:hover{
@@ -309,11 +307,12 @@ image{
 }
 
 #gif{
-max-width: 500px;
+max-width: 300px;
 min-width: 300px;
 max-height: 300px;
 min-height:200px;
-padding-left: 10%;
+/*padding-left: 10%;*/
+margin-left: 25%;
 
 
 }
