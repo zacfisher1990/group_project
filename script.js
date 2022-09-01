@@ -13,6 +13,8 @@ var pokemonThree = document.getElementById("p3");
 var pokemonFour = document.getElementById("p4");
 var pokemonFive = document.getElementById("p5");
 var pokemonSix = document.getElementById("p6");
+
+
 var gif = document.getElementById("gif");
 
 
@@ -64,7 +66,7 @@ fetch(pokeURL)
     
         var pokeNames = [];
         pokeNames[0] = data.forms[0].name;
-        
+
         localStorage.setItem("name", pokeNames);
         //if slot 1 is availble use slot 1...
         if (pokemonOne.innerHTML === "pokemon1") {
@@ -79,7 +81,7 @@ fetch(pokeURL)
                 pokemonOne.innerHTML = "pokemon1";
                 remove1.style.display = "none";
             })
-        
+
         } else if (pokemonTwo.innerHTML === "pokemon2" && pokemonOne.innerHTML !== "pokemon1") {
             pokemonTwo.textContent = localStorage.getItem("name");
             //remove button 2
@@ -145,13 +147,13 @@ fetch(pokeURL)
                 remove6.style.display = "none";
             })
         }
-     } ) 
+     } )
     })
     
     fetch(giphyURL)
     .then(function (response) {
       return response.json();
-      
+
     })
     .then(function (dataGiphy) {
       console.log(dataGiphy);
@@ -160,5 +162,3 @@ fetch(pokeURL)
         
     })
 })
-
- 
