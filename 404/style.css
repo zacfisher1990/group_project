@@ -1,0 +1,79 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: rgb(51, 15, 15);
+	font-family: "Orbitron", sans-serif;
+}
+
+img {
+  margin-top: 120px;
+	border-color: black;
+	border-radius: 10px;
+	border-width: 5px;
+	border-style: groove;
+	display: block;
+	background: rgb(0, 0, 0); /* Fallback color */
+	background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+}
+
+.container {
+	position: relative;
+	max-width: 800px; /* Maximum width */
+	margin: 0 auto; /* Center it */
+	padding: 5px;
+}
+
+.container .content {
+	position: absolute; /* Position the background text */
+	bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+	background: rgb(0, 0, 0); /* Fallback color */
+	background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+	color: #f1f1f1; /* Grey text */
+	width: 100%; /* Full width */
+	padding: 20px; /* Some padding */
+	border-radius: 10px;
+	font-size: 20px;
+
+}
+
+.block {
+	display: block;
+	width: 100%;
+	border: none;
+	background-color: #106918;
+	padding: 14px 28px;
+	font-size: 16px;
+	cursor: pointer;
+	text-align: center;
+	font-family: "Orbitron", sans-serif;
+}
+
+.content {
+  margin-left: 24px;
+  margin-bottom: 26px;
+}
+
+.header {
+	font-size: 40px;
+}
+
+/* Container for flexboxes */
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+/* Create four equal columns */
+.column {
+	flex: 50%;
+	padding: 20px;
+}
+
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 992px) {
+	.column, .block {
+		flex: 25%;
+	}
+}
