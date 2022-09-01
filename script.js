@@ -22,13 +22,14 @@ var gif = document.getElementById("gif");
 
 //search button click function
 pokeSearch.addEventListener('click', function(event){
-    event.preventDefault()
-
-
-
-var pokeInput = document.getElementById("search-bar").value
+    event.preventDefault();
+    if (addButton.innerHTML !== ""){
+        addButton.innerHTML = "";
+    }
+    
+var pokeInput = document.getElementById("search-bar").value;
 var pokeURL = "https://pokeapi.co/api/v2/pokemon/" + pokeInput;
-var giphyURL = "https://api.giphy.com/v1/gifs/search?api_key=IMh3RIefMtFd7bt0SsRLLBCGIAlLn4wN&limit=2&q=" + pokeInput;
+var giphyURL = "https://api.giphy.com/v1/stickers/search?api_key=IMh3RIefMtFd7bt0SsRLLBCGIAlLn4wN&limit=1&q=" + pokeInput;
 console.log(pokeURL);
 console.log(giphyURL);
 
@@ -36,22 +37,20 @@ fetch(pokeURL)
     .then(function (response) {
         if (response.status == "404") {
             pokeName.textContent = "Pokemon doesn't exist";
-           // gif.src = "https://pm1.narvii.com/6241/c4daa592fe4db39e706f3767e23dd73494f0f624_hq.jpg";
-        }
+           
+        } else {
             return response.json();
-
+        }
     })
     .then(function (data) {
       console.log(data);
       pokeName.textContent = data.forms[0].name;
-
+      
       //add button
       var add = document.createElement("span");
-      add.innerHTML = "Add " + data.forms[0].name;
-
+      add.innerHTML = "Add";
       addButton.appendChild(add);
-
-
+     
       //display type
       pokeType.textContent = data.types[0].type.name;
       //display moves/abilities
@@ -61,15 +60,10 @@ fetch(pokeURL)
       pokeMove4.textContent = data.moves[3].move.name;
 
 //Add pokemon to team button click function
-
-
-
       add.addEventListener('click', function(event){
-        event.preventDefault()
-
+        event.preventDefault();
         add.style.display = "none";
-        //addButton.style.display = "none";
-
+    
         var pokeNames = [];
         pokeNames[0] = data.forms[0].name;
 
@@ -152,13 +146,10 @@ fetch(pokeURL)
                 pokemonSix.innerHTML = "pokemon6";
                 remove6.style.display = "none";
             })
-
-
         }
      } )
     })
-
-
+    
     fetch(giphyURL)
     .then(function (response) {
       return response.json();
@@ -166,12 +157,8 @@ fetch(pokeURL)
     })
     .then(function (dataGiphy) {
       console.log(dataGiphy);
-
-      if (pokeName.textContent === "Pokemon doesn't exist") {
-        gif.src = "https://pm1.narvii.com/6241/c4daa592fe4db39e706f3767e23dd73494f0f624_hq.jpg";
-      } else {
         gif.src= dataGiphy.data[0].images.downsized.url;
-      }
 
+        
     })
 })
