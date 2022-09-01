@@ -18,11 +18,12 @@ var pokemonSix = document.getElementById("p6");
 var gif = document.getElementById("gif");
 
 
-
+addButton.style.display = "none";
 
 //search button click function
 pokeSearch.addEventListener('click', function(event){
     event.preventDefault();
+    addButton.style.display = "block";
     if (addButton.innerHTML !== ""){
         addButton.innerHTML = "";
     }
@@ -63,6 +64,7 @@ fetch(pokeURL)
       add.addEventListener('click', function(event){
         event.preventDefault();
         add.style.display = "none";
+        addButton.style.display = "none";
     
         var pokeNames = [];
         pokeNames[0] = data.forms[0].name;
